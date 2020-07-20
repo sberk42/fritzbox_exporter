@@ -1,6 +1,8 @@
 # Grafana dashboard working with this exporter
 
 This dashboard is based on the following dashboard:
-https://grafana.com/grafana/dashboards/12579
+https://grafana.com/grafana/dashboards/713
 
-Adjusted to my personal max down- and upstream and upgraded to the newest grafana version.
+Instead of influx it uses prometheus and has been modified and enhanced.
+
+The dashboard is now also published to [Grafana](https://grafana.com/grafana/dashboards/12579)
