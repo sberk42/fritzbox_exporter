@@ -1,0 +1,75 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ labels:
+   app: fritzbox-exporter
+ name: fritzbox-exporter
+ namespace: metrics-app
+spec:
+ progressDeadlineSeconds: 600
+ replicas: 1
+ revisionHistoryLimit: 10
+ selector:
+   matchLabels:
+     app: fritzbox-exporter
+ strategy:
+   rollingUpdate:
+     maxSurge: 25%
+     maxUnavailable: 25%
+   type: RollingUpdate
+ template:
+   metadata:
+     labels:
+       app: fritzbox-exporter
+     name: fritzbox-exporter
+   spec:
+     containers:
+     - env:
+       - name: GWURL
+         value: 'http://ip-fritzbox:49000'
+       - name: USERNAME
+         value: 'username'
+       - name: PASSWORD
+         value: 'password'
+       image: alexxanddr/fritzbox-exporter:latest
+       imagePullPolicy: Always
+       name: fritzbox-exporter
+       resources: {}
+       securityContext:
+         privileged: false
+       terminationMessagePath: /dev/termination-log
+       terminationMessagePolicy: File
+     dnsPolicy: ClusterFirst
+     hostAliases:
+     - hostnames:
+       - fritz.box
+       ip: 'ip-fritzbox'
+     restartPolicy: Always
+     schedulerName: default-scheduler
+     securityContext: {}
+     terminationGracePeriodSeconds: 30
+---
+apiVersion: v1
+kind: Service
+metadata:
+ annotations:
+   prometheus.io/path: /metrics
+   prometheus.io/port: "9042"
+   prometheus.io/scrape: "true"
+ labels:
+   app: fritzbox-exporter
+ name: fritzbox-exporter
+ namespace: metrics-app
+spec:
+ clusterIP: 
+ ports:
+ - name: tcp
+   port: 9042
+   protocol: TCP
+   targetPort: 9042
+ selector:
+   app: fritzbox-exporter
+ sessionAffinity: None
+ type: ClusterIP
+status:
+ loadBalancer: {}
