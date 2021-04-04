@@ -35,6 +35,39 @@ Other changes:
 In the configuration of the Fritzbox the option "Statusinformationen über UPnP übertragen" in the dialog "Heimnetz >
 Heimnetzübersicht > Netzwerkeinstellungen" has to be enabled.
 
+### Using docker
+
+First you have to build the container: `docker build --tag fritzbox-prometheus-exporter:latest .`
+
+Then start the container:
+
+```bash
+$ docker run -e 'USERNAME=your_fritzbox_username' \
+    -e 'PASSWORD=your_fritzbox_password' \
+    -e 'GATEWAY_URL="http://192.168.0.1:49000"' \
+    -e 'LISTEN_ADDRESS="0.0.0.0:9042"' \
+    fritzbox-prometheus-exporter:latest
+```
+
+I've you're getting `no such host` issues, define your FritzBox as DNS server for your docker container like this:
+
+```bash
+$ docker run --dns YOUR_FRITZBOX_IP \
+    -e 'USERNAME=your_fritzbox_username' \
+    -e 'PASSWORD=your_fritzbox_password' \
+    -e 'GATEWAY_URL="http://192.168.0.1:49000"' \
+    -e 'LISTEN_ADDRESS="0.0.0.0:9042"' \
+    fritzbox-prometheus-exporter:latest
+```
+
+### Using docker-compose
+
+Set your environment variables within the [docker-compose.yml](docker-compose.yml) file.  
+
+Then start up the container using `docker-compose up -d`.
+
+### Using the binary
+
 Usage:
 
     $GOPATH/bin/fritzbox_exporter -h
