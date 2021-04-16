@@ -18,6 +18,9 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"github.com/namsral/flag"
+	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -28,10 +31,6 @@ import (
 	"strings"
 	"sync"
 	"time"
-
-	"github.com/namsral/flag"
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
 
 	lua "github.com/sberk42/fritzbox_exporter/fritzbox_lua"
 	upnp "github.com/sberk42/fritzbox_exporter/fritzbox_upnp"
@@ -315,7 +314,7 @@ func (fc *FritzboxCollector) getActionResult(metric *Metric, actionName string, 
 
 	key := metric.Service + "|" + actionName
 
-	// for calls with argument also add arguement name and value to key
+	// for calls with argument also add argument name and value to key
 	if actionArg != nil {
 		key += "|" + actionArg.Name + "|" + fmt.Sprintf("%v", actionArg.Value)
 	}
