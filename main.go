@@ -18,8 +18,11 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"github.com/namsral/flag"
+	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"github.com/sirupsen/logrus"
 	"io/ioutil"
-	"log"
 	"net/http"
 	"net/url"
 	"regexp"
@@ -28,10 +31,6 @@ import (
 	"strings"
 	"sync"
 	"time"
-
-	"github.com/namsral/flag"
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
 
 	lua "github.com/sberk42/fritzbox_exporter/fritzbox_lua"
 	upnp "github.com/sberk42/fritzbox_exporter/fritzbox_upnp"
@@ -57,6 +56,8 @@ var (
 	flagGatewayLuaURL = flag.String("gateway-luaurl", "http://fritz.box", "The URL of the FRITZ!Box UI")
 	flagUsername      = flag.String("username", "", "The user for the FRITZ!Box UPnP service")
 	flagPassword      = flag.String("password", "", "The password for the FRITZ!Box UPnP service")
+
+	flagLogLevel = flag.String("log-level", "info", "The logging level. Can be error, warn, info, debug or trace")
 )
 
 var (
@@ -221,13 +222,13 @@ func (fc *FritzboxCollector) LoadServices() {
 	for {
 		root, err := upnp.LoadServices(fc.URL, fc.Username, fc.Password)
 		if err != nil {
-			fmt.Printf("cannot load services: %s\n", err)
+			logrus.Errorf("cannot load services: %s", err)
 
 			time.Sleep(serviceLoadRetryTime)
 			continue
 		}
 
-		fmt.Printf("services loaded\n")
+		logrus.Info("services loaded")
 
 		fc.Lock()
 		fc.Root = root
@@ -247,7 +248,7 @@ func (fc *FritzboxCollector) reportMetric(ch chan<- prometheus.Metric, m *Metric
 
 	val, ok := result[m.Result]
 	if !ok {
-		fmt.Printf("%s.%s has no result %s", m.Service, m.Action, m.Result)
+		logrus.Debugf("%s.%s has no result %s", m.Service, m.Action, m.Result)
 		collectErrors.Inc()
 		return
 	}
@@ -269,7 +270,7 @@ func (fc *FritzboxCollector) reportMetric(ch chan<- prometheus.Metric, m *Metric
 			floatval = 0
 		}
 	default:
-		fmt.Println("unknown type", val)
+		logrus.Warnf("unknown type: %s", val)
 		collectErrors.Inc()
 		return
 	}
@@ -281,7 +282,7 @@ func (fc *FritzboxCollector) reportMetric(ch chan<- prometheus.Metric, m *Metric
 		} else {
 			lval, ok := result[l]
 			if !ok {
-				fmt.Printf("%s.%s has no resul for label %s", m.Service, m.Action, l)
+				logrus.Warnf("%s.%s has no resul for label %s", m.Service, m.Action, l)
 				lval = ""
 			}
 
@@ -297,7 +298,7 @@ func (fc *FritzboxCollector) reportMetric(ch chan<- prometheus.Metric, m *Metric
 	// check for duplicate labels to prevent collection failure
 	key := m.PromDesc.FqName + ":" + m.PromDesc.fixedLabelValues + strings.Join(labels, ",")
 	if dupCache[key] {
-		fmt.Printf("%s.%s reported before as: %s\n", m.Service, m.Action, key)
+		logrus.Debugf("%s.%s reported before as: %s\n", m.Service, m.Action, key)
 		collectErrors.Inc()
 		return
 	}
@@ -305,7 +306,7 @@ func (fc *FritzboxCollector) reportMetric(ch chan<- prometheus.Metric, m *Metric
 
 	metric, err := prometheus.NewConstMetric(m.Desc, m.MetricType, floatval, labels...)
 	if err != nil {
-		fmt.Printf("Error creating metric %s.%s: %s", m.Service, m.Action, err.Error())
+		logrus.Errorf("Can not create metric %s.%s: %s", m.Service, m.Action, err.Error())
 	} else {
 		ch <- metric
 	}
@@ -315,7 +316,7 @@ func (fc *FritzboxCollector) getActionResult(metric *Metric, actionName string, 
 
 	key := metric.Service + "|" + actionName
 
-	// for calls with argument also add arguement name and value to key
+	// for calls with argument also add argument name and value to key
 	if actionArg != nil {
 		key += "|" + actionArg.Name + "|" + fmt.Sprintf("%v", actionArg.Value)
 	}
@@ -382,7 +383,7 @@ func (fc *FritzboxCollector) Collect(ch chan<- prometheus.Metric) {
 				provRes, err := fc.getActionResult(m, aa.ProviderAction, nil)
 
 				if err != nil {
-					fmt.Printf("Error getting provider action %s result for %s.%s: %s\n", aa.ProviderAction, m.Service, m.Action, err.Error())
+					logrus.Warnf("Error getting provider action %s result for %s.%s: %s", aa.ProviderAction, m.Service, m.Action, err.Error())
 					collectErrors.Inc()
 					continue
 				}
@@ -390,7 +391,7 @@ func (fc *FritzboxCollector) Collect(ch chan<- prometheus.Metric) {
 				var ok bool
 				value, ok = provRes[aa.Value] // Value contains the result name for provider actions
 				if !ok {
-					fmt.Printf("provider action %s for %s.%s has no result", m.Service, m.Action, aa.Value)
+					logrus.Warnf("provider action %s for %s.%s has no result", m.Service, m.Action, aa.Value)
 					collectErrors.Inc()
 					continue
 				}
@@ -400,7 +401,7 @@ func (fc *FritzboxCollector) Collect(ch chan<- prometheus.Metric) {
 				sval := fmt.Sprintf("%v", value)
 				count, err := strconv.Atoi(sval)
 				if err != nil {
-					fmt.Println(err.Error())
+					logrus.Warn(err.Error())
 					collectErrors.Inc()
 					continue
 				}
@@ -410,7 +411,7 @@ func (fc *FritzboxCollector) Collect(ch chan<- prometheus.Metric) {
 					result, err := fc.getActionResult(m, m.Action, actArg)
 
 					if err != nil {
-						fmt.Println(err.Error())
+						logrus.Error("Can not get result for %s: %s", m.Action, err)
 						collectErrors.Inc()
 						continue
 					}
@@ -427,7 +428,7 @@ func (fc *FritzboxCollector) Collect(ch chan<- prometheus.Metric) {
 		result, err := fc.getActionResult(m, m.Action, actArg)
 
 		if err != nil {
-			fmt.Println(err.Error())
+			logrus.Warnf("can not collect metrics: %s", err)
 			collectErrors.Inc()
 			continue
 		}
@@ -460,7 +461,7 @@ func (fc *FritzboxCollector) collectLua(ch chan<- prometheus.Metric, dupCache ma
 			pageData, err := fc.LuaSession.LoadData(lm.LuaPage)
 
 			if err != nil {
-				fmt.Printf("Error loading %s for %s.%s: %s\n", lm.Path, lm.ResultPath, lm.ResultKey, err.Error())
+				logrus.Errorf("Can not load %s for %s.%s: %s", lm.Path, lm.ResultPath, lm.ResultKey, err.Error())
 				luaCollectErrors.Inc()
 				fc.LuaSession.SID = "" // clear SID in case of error, so force reauthentication
 				continue
@@ -469,7 +470,7 @@ func (fc *FritzboxCollector) collectLua(ch chan<- prometheus.Metric, dupCache ma
 			var data map[string]interface{}
 			data, err = lua.ParseJSON(pageData)
 			if err != nil {
-				fmt.Printf("Error parsing JSON from %s for %s.%s: %s\n", lm.Path, lm.ResultPath, lm.ResultKey, err.Error())
+				logrus.Errorf("Can not parse JSON from %s for %s.%s: %s", lm.Path, lm.ResultPath, lm.ResultKey, err.Error())
 				luaCollectErrors.Inc()
 				continue
 			}
@@ -484,7 +485,7 @@ func (fc *FritzboxCollector) collectLua(ch chan<- prometheus.Metric, dupCache ma
 		metricVals, err := lua.GetMetrics(fc.LabelRenames, *cacheEntry.Result, lm.LuaMetricDef)
 
 		if err != nil {
-			fmt.Printf("Error getting metric values for %s.%s: %s\n", lm.ResultPath, lm.ResultKey, err.Error())
+			logrus.Errorf("Can not get metric values for %s.%s: %s", lm.ResultPath, lm.ResultKey, err.Error())
 			luaCollectErrors.Inc()
 			cacheEntry.Result = nil // don't use invalid results for cache
 			continue
@@ -505,7 +506,7 @@ func (fc *FritzboxCollector) reportLuaMetric(ch chan<- prometheus.Metric, lm *Lu
 		} else {
 			lval, ok := value.Labels[l]
 			if !ok {
-				fmt.Printf("%s.%s from %s?%s has no resul for label %s", lm.ResultPath, lm.ResultKey, lm.Path, lm.Params, l)
+				logrus.Warnf("%s.%s from %s?%s has no resul for label %s", lm.ResultPath, lm.ResultKey, lm.Path, lm.Params, l)
 				lval = ""
 			}
 
@@ -521,7 +522,7 @@ func (fc *FritzboxCollector) reportLuaMetric(ch chan<- prometheus.Metric, lm *Lu
 	// check for duplicate labels to prevent collection failure
 	key := lm.PromDesc.FqName + ":" + lm.PromDesc.fixedLabelValues + strings.Join(labels, ",")
 	if dupCache[key] {
-		fmt.Printf("%s.%s reported before as: %s\n", lm.ResultPath, lm.ResultPath, key)
+		logrus.Errorf("%s.%s reported before as: %s\n", lm.ResultPath, lm.ResultPath, key)
 		luaCollectErrors.Inc()
 		return
 	}
@@ -529,7 +530,7 @@ func (fc *FritzboxCollector) reportLuaMetric(ch chan<- prometheus.Metric, lm *Lu
 
 	metric, err := prometheus.NewConstMetric(lm.Desc, lm.MetricType, value.Value, labels...)
 	if err != nil {
-		fmt.Printf("Error creating metric %s.%s: %s", lm.ResultPath, lm.ResultPath, err.Error())
+		logrus.Errorf("Can not create metric %s.%s: %s", lm.ResultPath, lm.ResultPath, err.Error())
 	} else {
 		ch <- metric
 	}
@@ -541,7 +542,7 @@ func test() {
 		panic(err)
 	}
 
-	var newEntry bool = false
+	var newEntry = false
 	var json bytes.Buffer
 	json.WriteString("[\n")
 
@@ -552,7 +553,7 @@ func test() {
 	sort.Strings(serviceKeys)
 	for _, k := range serviceKeys {
 		s := root.Services[k]
-		fmt.Printf("Service: %s (Url: %s)\n", k, s.ControlURL)
+		logrus.Infof("Service: %s (Url: %s)\n", k, s.ControlURL)
 
 		actionKeys := []string{}
 		for l := range s.Actions {
@@ -561,14 +562,14 @@ func test() {
 		sort.Strings(actionKeys)
 		for _, l := range actionKeys {
 			a := s.Actions[l]
-			fmt.Printf("  %s - arguments: variable [direction] (soap name, soap type)\n", a.Name)
+			logrus.Debugf("%s - arguments: variable [direction] (soap name, soap type)", a.Name)
 			for _, arg := range a.Arguments {
 				sv := arg.StateVariable
-				fmt.Printf("    %s [%s] (%s, %s)\n", arg.RelatedStateVariable, arg.Direction, arg.Name, sv.DataType)
+				logrus.Debugf("%s [%s] (%s, %s)", arg.RelatedStateVariable, arg.Direction, arg.Name, sv.DataType)
 			}
 
 			if !a.IsGetOnly() {
-				fmt.Printf("  %s - not calling, since arguments required or no output\n", a.Name)
+				logrus.Debugf("%s - not calling, since arguments required or no output", a.Name)
 				continue
 			}
 
@@ -591,16 +592,16 @@ func test() {
 				json.WriteString("\"\n\t}")
 			}
 
-			fmt.Printf("  %s - calling - results: variable: value\n", a.Name)
+			logrus.Debugf("%s - calling - results: variable: value", a.Name)
 			res, err := a.Call(nil)
 
 			if err != nil {
-				fmt.Printf("    FAILED:%s\n", err.Error())
+				logrus.Warnf("FAILED:%s", err)
 				continue
 			}
 
 			for _, arg := range a.Arguments {
-				fmt.Printf("    %s: %v\n", arg.RelatedStateVariable, res[arg.StateVariable.Name])
+				logrus.Debugf("%s: %v", arg.RelatedStateVariable, res[arg.StateVariable.Name])
 			}
 		}
 	}
@@ -610,7 +611,7 @@ func test() {
 	if *flagJSONOut != "" {
 		err := ioutil.WriteFile(*flagJSONOut, json.Bytes(), 0644)
 		if err != nil {
-			fmt.Printf("Failed writing JSON file '%s': %s\n", *flagJSONOut, err.Error())
+			logrus.Warnf("Failed writing JSON file '%s': %s\n", *flagJSONOut, err.Error())
 		}
 	}
 }
@@ -619,14 +620,14 @@ func testLua() {
 
 	jsonData, err := ioutil.ReadFile("luaTest.json")
 	if err != nil {
-		fmt.Println("error reading luaTest.json:", err)
+		logrus.Error("Can not read luaTest.json: ", err)
 		return
 	}
 
 	var luaTests []LuaTest
 	err = json.Unmarshal(jsonData, &luaTests)
 	if err != nil {
-		fmt.Println("error parsing luaTest JSON:", err)
+		logrus.Error("Can not parse luaTest JSON: ", err)
 		return
 	}
 
@@ -634,19 +635,14 @@ func testLua() {
 	luaSession := lua.LuaSession{BaseURL: *flagGatewayLuaURL, Username: *flagUsername, Password: *flagPassword}
 
 	for _, test := range luaTests {
-		fmt.Printf("TESTING: %s (%s)\n", test.Path, test.Params)
-
 		page := lua.LuaPage{Path: test.Path, Params: test.Params}
 		pageData, err := luaSession.LoadData(page)
 
 		if err != nil {
-			fmt.Println(err.Error())
+			logrus.Errorf("Testing %s (%s) failed: %s", test.Path, test.Params, err.Error())
 		} else {
-			fmt.Println(string(pageData))
+			logrus.Infof("Testing %s(%s) successful: %s", test.Path, test.Params, string(pageData))
 		}
-
-		fmt.Println()
-		fmt.Println()
 	}
 }
 
@@ -665,10 +661,16 @@ func getValueType(vt string) prometheus.ValueType {
 
 func main() {
 	flag.Parse()
+	level, e := logrus.ParseLevel(*flagLogLevel)
+	if e != nil {
+		logrus.Warnf("Can not parse log level: %s use INFO", e)
+		level = logrus.InfoLevel
+	}
+	logrus.SetLevel(level)
 
 	u, err := url.Parse(*flagGatewayURL)
 	if err != nil {
-		fmt.Println("invalid URL:", err)
+		logrus.Errorf("invalid URL:", err)
 		return
 	}
 
@@ -685,13 +687,13 @@ func main() {
 	// read metrics
 	jsonData, err := ioutil.ReadFile(*flagMetricsFile)
 	if err != nil {
-		fmt.Println("error reading metric file:", err)
+		logrus.Errorf("error reading metric file:", err)
 		return
 	}
 
 	err = json.Unmarshal(jsonData, &metrics)
 	if err != nil {
-		fmt.Println("error parsing JSON:", err)
+		logrus.Errorf("error parsing JSON:", err)
 		return
 	}
 
@@ -703,14 +705,14 @@ func main() {
 	if !*flagDisableLua {
 		jsonData, err := ioutil.ReadFile(*flagLuaMetricsFile)
 		if err != nil {
-			fmt.Println("error reading lua metric file:", err)
+			logrus.Error("error reading lua metric file:", err)
 			return
 		}
 
 		var lmf *LuaMetricsFile
 		err = json.Unmarshal(jsonData, &lmf)
 		if err != nil {
-			fmt.Println("error parsing lua JSON:", err)
+			logrus.Error("error parsing lua JSON:", err)
 			return
 		}
 
@@ -723,7 +725,7 @@ func main() {
 			regex, err := regexp.Compile(ren.MatchRegex)
 
 			if err != nil {
-				fmt.Println("error compiling lua rename regex:", err)
+				logrus.Error("error compiling lua rename regex:", err)
 				return
 			}
 
@@ -820,14 +822,14 @@ func main() {
 			prometheus.MustRegister(luaCollectErrors)
 		}
 
-		fmt.Println("collecting metrics via http")
+		logrus.Infof("collecting metrics via http")
 
 		// simulate HTTP request without starting actual http server
 		writer := testResponseWriter{header: http.Header{}}
 		request := http.Request{}
 		promhttp.Handler().ServeHTTP(&writer, &request)
 
-		fmt.Println(writer.String())
+		logrus.Infof("Response:\n\n%s", writer.String())
 
 		return
 	}
@@ -846,7 +848,7 @@ func main() {
 	}
 
 	http.Handle("/metrics", promhttp.Handler())
-	fmt.Printf("metrics available at http://%s/metrics\n", *flagAddr)
+	logrus.Infof("metrics available at http://%s/metrics", *flagAddr)
 
-	log.Fatal(http.ListenAndServe(*flagAddr, nil))
+	logrus.Error(http.ListenAndServe(*flagAddr, nil))
 }
