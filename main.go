@@ -18,6 +18,9 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"github.com/namsral/flag"
+	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -28,10 +31,6 @@ import (
 	"strings"
 	"sync"
 	"time"
-
-	"github.com/namsral/flag"
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
 
 	lua "github.com/sberk42/fritzbox_exporter/fritzbox_lua"
 	upnp "github.com/sberk42/fritzbox_exporter/fritzbox_upnp"
@@ -315,7 +314,7 @@ func (fc *FritzboxCollector) getActionResult(metric *Metric, actionName string, 
 
 	key := metric.Service + "|" + actionName
 
-	// for calls with argument also add arguement name and value to key
+	// for calls with argument also add argument name and value to key
 	if actionArg != nil {
 		key += "|" + actionArg.Name + "|" + fmt.Sprintf("%v", actionArg.Value)
 	}
@@ -835,18 +834,24 @@ func main() {
 	go collector.LoadServices()
 
 	prometheus.MustRegister(collector)
-	prometheus.MustRegister(collectErrors)
-	prometheus.MustRegister(collectUpnpResultsCached)
-	prometheus.MustRegister(collectUpnpResultsLoaded)
+    prometheus.MustRegister(collectErrors)
+    prometheus.MustRegister(collectUpnpResultsCached)
+    prometheus.MustRegister(collectUpnpResultsLoaded)
 
-	if luaSession != nil {
-		prometheus.MustRegister(luaCollectErrors)
-		prometheus.MustRegister(collectLuaResultsCached)
-		prometheus.MustRegister(collectLuaResultsLoaded)
-	}
+    if luaSession != nil {
+        prometheus.MustRegister(luaCollectErrors)
+        prometheus.MustRegister(collectLuaResultsCached)
+        prometheus.MustRegister(collectLuaResultsLoaded)
+    }
 
-	http.Handle("/metrics", promhttp.Handler())
-	fmt.Printf("metrics available at http://%s/metrics\n", *flagAddr)
+    healthChecks := createHealthChecks(*flagGatewayURL)
 
-	log.Fatal(http.ListenAndServe(*flagAddr, nil))
+    http.Handle("/metrics", promhttp.Handler())
+    fmt.Printf("metrics available at http://%s/metrics\n", *flagAddr)
+    http.HandleFunc("/ready", healthChecks.ReadyEndpoint)
+    fmt.Printf("readyness check available at http://%s/ready\n", *flagAddr)
+    http.HandleFunc("/live", healthChecks.LiveEndpoint)
+    fmt.Printf("liveness check available at http://%s/live\n", *flagAddr)
+
+    log.Fatal(http.ListenAndServe(*flagAddr, nil))
 }
