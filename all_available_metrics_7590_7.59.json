@@ -1,0 +1,3992 @@
+[
+	{
+		"service": "urn:dslforum-org:service:DeviceConfig:1",
+		"action": "ConfigurationFinished",
+		"result": "A_ARG_TYPE_Status"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceConfig:1",
+		"action": "GetPersistentData",
+		"result": "PersistentData"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceConfig:1",
+		"action": "X_AVM-DE_CreateUrlSID",
+		"result": "X_AVM-DE_UrlSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceConfig:1",
+		"action": "X_AVM-DE_GetSupportDataEnable",
+		"result": "X_AVM-DE_SupportDataEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceConfig:1",
+		"action": "X_AVM-DE_GetSupportDataInfo",
+		"result": "X_AVM-DE_SupportDataMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceConfig:1",
+		"action": "X_AVM-DE_GetSupportDataInfo",
+		"result": "X_AVM-DE_SupportDataID"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceConfig:1",
+		"action": "X_AVM-DE_GetSupportDataInfo",
+		"result": "X_AVM-DE_SupportDataTimestamp"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceConfig:1",
+		"action": "X_AVM-DE_GetSupportDataInfo",
+		"result": "X_AVM-DE_SupportDataStatus"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceConfig:1",
+		"action": "X_AVM-DE_GetSupportDataInfo",
+		"result": "X_AVM-DE_SupportDataEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceConfig:1",
+		"action": "X_GenerateUUID",
+		"result": "UUID"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceInfo:1",
+		"action": "GetDeviceLog",
+		"result": "DeviceLog"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceInfo:1",
+		"action": "GetInfo",
+		"result": "ManufacturerName"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceInfo:1",
+		"action": "GetInfo",
+		"result": "ManufacturerOUI"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceInfo:1",
+		"action": "GetInfo",
+		"result": "ModelName"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceInfo:1",
+		"action": "GetInfo",
+		"result": "Description"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceInfo:1",
+		"action": "GetInfo",
+		"result": "ProductClass"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceInfo:1",
+		"action": "GetInfo",
+		"result": "SerialNumber"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceInfo:1",
+		"action": "GetInfo",
+		"result": "SoftwareVersion"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceInfo:1",
+		"action": "GetInfo",
+		"result": "HardwareVersion"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceInfo:1",
+		"action": "GetInfo",
+		"result": "SpecVersion"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceInfo:1",
+		"action": "GetInfo",
+		"result": "ProvisioningCode"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceInfo:1",
+		"action": "GetInfo",
+		"result": "UpTime"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceInfo:1",
+		"action": "GetInfo",
+		"result": "DeviceLog"
+	},
+	{
+		"service": "urn:dslforum-org:service:DeviceInfo:1",
+		"action": "GetSecurityPort",
+		"result": "SecurityPort"
+	},
+	{
+		"service": "urn:dslforum-org:service:Hosts:1",
+		"action": "GetHostNumberOfEntries",
+		"result": "HostNumberOfEntries"
+	},
+	{
+		"service": "urn:dslforum-org:service:Hosts:1",
+		"action": "X_AVM-DE_GetChangeCounter",
+		"result": "X_AVM-DE_ChangeCounter"
+	},
+	{
+		"service": "urn:dslforum-org:service:Hosts:1",
+		"action": "X_AVM-DE_GetFriendlyName",
+		"result": "X_AVM-DE_FriendlyName"
+	},
+	{
+		"service": "urn:dslforum-org:service:Hosts:1",
+		"action": "X_AVM-DE_GetHostListPath",
+		"result": "X_AVM-DE_HostListPath"
+	},
+	{
+		"service": "urn:dslforum-org:service:Hosts:1",
+		"action": "X_AVM-DE_GetInfo",
+		"result": "X_AVM-DE_FriendlynameMinChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:Hosts:1",
+		"action": "X_AVM-DE_GetInfo",
+		"result": "X_AVM-DE_FriendlynameMaxChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:Hosts:1",
+		"action": "X_AVM-DE_GetInfo",
+		"result": "X_AVM-DE_HostnameMinChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:Hosts:1",
+		"action": "X_AVM-DE_GetInfo",
+		"result": "X_AVM-DE_HostnameMaxChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:Hosts:1",
+		"action": "X_AVM-DE_GetInfo",
+		"result": "X_AVM-DE_HostnameAllowedChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:Hosts:1",
+		"action": "X_AVM-DE_GetMeshListPath",
+		"result": "X_AVM-DE_MeshListPath"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANConfigSecurity:1",
+		"action": "GetInfo",
+		"result": "MaxCharsPassword"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANConfigSecurity:1",
+		"action": "GetInfo",
+		"result": "MinCharsPassword"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANConfigSecurity:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsPassword"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANConfigSecurity:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsUsername"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANConfigSecurity:1",
+		"action": "GetInfo",
+		"result": "X_AVM-DE_IsDefaultPasswordActive"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANConfigSecurity:1",
+		"action": "X_AVM-DE_GetAnonymousLogin",
+		"result": "X_AVM-DE_AnonymousLoginEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANConfigSecurity:1",
+		"action": "X_AVM-DE_GetAnonymousLogin",
+		"result": "X_AVM-DE_ButtonLoginEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANConfigSecurity:1",
+		"action": "X_AVM-DE_GetCurrentUser",
+		"result": "X_AVM-DE_CurrentUsername"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANConfigSecurity:1",
+		"action": "X_AVM-DE_GetCurrentUser",
+		"result": "X_AVM-DE_CurrentUserRights"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANConfigSecurity:1",
+		"action": "X_AVM-DE_GetUserList",
+		"result": "X_AVM-DE_UserList"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANEthernetInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "Enable"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANEthernetInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "Status"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANEthernetInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "MACAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANEthernetInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "MaxBitRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANEthernetInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "DuplexMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANEthernetInterfaceConfig:1",
+		"action": "GetStatistics",
+		"result": "Stats.BytesSent"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANEthernetInterfaceConfig:1",
+		"action": "GetStatistics",
+		"result": "Stats.BytesReceived"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANEthernetInterfaceConfig:1",
+		"action": "GetStatistics",
+		"result": "Stats.PacketsSent"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANEthernetInterfaceConfig:1",
+		"action": "GetStatistics",
+		"result": "Stats.PacketsReceived"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANHostConfigManagement:1",
+		"action": "GetAddressRange",
+		"result": "MinAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANHostConfigManagement:1",
+		"action": "GetAddressRange",
+		"result": "MaxAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANHostConfigManagement:1",
+		"action": "GetDNSServers",
+		"result": "DNSServers"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANHostConfigManagement:1",
+		"action": "GetIPInterfaceNumberOfEntries",
+		"result": "IPInterfaceNumberOfEntries"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANHostConfigManagement:1",
+		"action": "GetIPRoutersList",
+		"result": "IPRouters"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANHostConfigManagement:1",
+		"action": "GetInfo",
+		"result": "DHCPServerConfigurable"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANHostConfigManagement:1",
+		"action": "GetInfo",
+		"result": "DHCPRelay"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANHostConfigManagement:1",
+		"action": "GetInfo",
+		"result": "MinAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANHostConfigManagement:1",
+		"action": "GetInfo",
+		"result": "MaxAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANHostConfigManagement:1",
+		"action": "GetInfo",
+		"result": "ReservedAddresses"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANHostConfigManagement:1",
+		"action": "GetInfo",
+		"result": "DHCPServerEnable"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANHostConfigManagement:1",
+		"action": "GetInfo",
+		"result": "DNSServers"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANHostConfigManagement:1",
+		"action": "GetInfo",
+		"result": "DomainName"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANHostConfigManagement:1",
+		"action": "GetInfo",
+		"result": "IPRouters"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANHostConfigManagement:1",
+		"action": "GetInfo",
+		"result": "SubnetMask"
+	},
+	{
+		"service": "urn:dslforum-org:service:LANHostConfigManagement:1",
+		"action": "GetSubnetMask",
+		"result": "SubnetMask"
+	},
+	{
+		"service": "urn:dslforum-org:service:Layer3Forwarding:1",
+		"action": "GetDefaultConnectionService",
+		"result": "DefaultConnectionService"
+	},
+	{
+		"service": "urn:dslforum-org:service:Layer3Forwarding:1",
+		"action": "GetForwardNumberOfEntries",
+		"result": "ForwardNumberOfEntries"
+	},
+	{
+		"service": "urn:dslforum-org:service:ManagementServer:1",
+		"action": "GetInfo",
+		"result": "URL"
+	},
+	{
+		"service": "urn:dslforum-org:service:ManagementServer:1",
+		"action": "GetInfo",
+		"result": "Username"
+	},
+	{
+		"service": "urn:dslforum-org:service:ManagementServer:1",
+		"action": "GetInfo",
+		"result": "PeriodicInformEnable"
+	},
+	{
+		"service": "urn:dslforum-org:service:ManagementServer:1",
+		"action": "GetInfo",
+		"result": "PeriodicInformInterval"
+	},
+	{
+		"service": "urn:dslforum-org:service:ManagementServer:1",
+		"action": "GetInfo",
+		"result": "PeriodicInformTime"
+	},
+	{
+		"service": "urn:dslforum-org:service:ManagementServer:1",
+		"action": "GetInfo",
+		"result": "ParameterKey"
+	},
+	{
+		"service": "urn:dslforum-org:service:ManagementServer:1",
+		"action": "GetInfo",
+		"result": "ParameterHash"
+	},
+	{
+		"service": "urn:dslforum-org:service:ManagementServer:1",
+		"action": "GetInfo",
+		"result": "ConnectionRequestURL"
+	},
+	{
+		"service": "urn:dslforum-org:service:ManagementServer:1",
+		"action": "GetInfo",
+		"result": "ConnectionRequestUsername"
+	},
+	{
+		"service": "urn:dslforum-org:service:ManagementServer:1",
+		"action": "GetInfo",
+		"result": "UpgradesManaged"
+	},
+	{
+		"service": "urn:dslforum-org:service:ManagementServer:1",
+		"action": "X_AVM-DE_GetTR069FirmwareDownloadEnabled",
+		"result": "TR069FirmwareDownloadEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:Time:1",
+		"action": "GetInfo",
+		"result": "NTPServer1"
+	},
+	{
+		"service": "urn:dslforum-org:service:Time:1",
+		"action": "GetInfo",
+		"result": "NTPServer2"
+	},
+	{
+		"service": "urn:dslforum-org:service:Time:1",
+		"action": "GetInfo",
+		"result": "CurrentLocalTime"
+	},
+	{
+		"service": "urn:dslforum-org:service:Time:1",
+		"action": "GetInfo",
+		"result": "LocalTimeZone"
+	},
+	{
+		"service": "urn:dslforum-org:service:Time:1",
+		"action": "GetInfo",
+		"result": "LocalTimeZoneName"
+	},
+	{
+		"service": "urn:dslforum-org:service:Time:1",
+		"action": "GetInfo",
+		"result": "DaylightSavingsUsed"
+	},
+	{
+		"service": "urn:dslforum-org:service:Time:1",
+		"action": "GetInfo",
+		"result": "DaylightSavingsStart"
+	},
+	{
+		"service": "urn:dslforum-org:service:Time:1",
+		"action": "GetInfo",
+		"result": "DaylightSavingsEnd"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "GetInfo",
+		"result": "UpgradeAvailable"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "GetInfo",
+		"result": "PasswordRequired"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "GetInfo",
+		"result": "PasswordUserSelectable"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "GetInfo",
+		"result": "WarrantyDate"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "GetInfo",
+		"result": "X_AVM-DE_Version"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "GetInfo",
+		"result": "X_AVM-DE_DownloadURL"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "GetInfo",
+		"result": "X_AVM-DE_InfoURL"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "GetInfo",
+		"result": "X_AVM-DE_UpdateState"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "GetInfo",
+		"result": "X_AVM-DE_BuildType"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "GetInfo",
+		"result": "X_AVM-DE_SetupAssistantStatus"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "X_AVM-DE_DoPrepareCGI",
+		"result": "X_AVM-DE_CGI"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "X_AVM-DE_DoPrepareCGI",
+		"result": "X_AVM-DE_SessionID"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "X_AVM-DE_DoUpdate",
+		"result": "UpgradeAvailable"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "X_AVM-DE_DoUpdate",
+		"result": "X_AVM-DE_UpdateState"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "X_AVM-DE_GetInfo",
+		"result": "X_AVM-DE_AutoUpdateMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "X_AVM-DE_GetInfo",
+		"result": "X_AVM-DE_UpdateTime"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "X_AVM-DE_GetInfo",
+		"result": "X_AVM-DE_LastFwVersion"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "X_AVM-DE_GetInfo",
+		"result": "X_AVM-DE_InfoURL"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "X_AVM-DE_GetInfo",
+		"result": "X_AVM-DE_Version"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "X_AVM-DE_GetInfo",
+		"result": "X_AVM-DE_UpdateSuccessful"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "X_AVM-DE_GetInternationalConfig",
+		"result": "X_AVM-DE_Language"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "X_AVM-DE_GetInternationalConfig",
+		"result": "X_AVM-DE_Country"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "X_AVM-DE_GetInternationalConfig",
+		"result": "X_AVM-DE_Annex"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "X_AVM-DE_GetInternationalConfig",
+		"result": "X_AVM-DE_LanguageList"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "X_AVM-DE_GetInternationalConfig",
+		"result": "X_AVM-DE_CountryList"
+	},
+	{
+		"service": "urn:dslforum-org:service:UserInterface:1",
+		"action": "X_AVM-DE_GetInternationalConfig",
+		"result": "X_AVM-DE_AnnexList"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetCommonLinkProperties",
+		"result": "WANAccessType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetCommonLinkProperties",
+		"result": "Layer1UpstreamMaxBitRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetCommonLinkProperties",
+		"result": "Layer1DownstreamMaxBitRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetCommonLinkProperties",
+		"result": "PhysicalLinkStatus"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetCommonLinkProperties",
+		"result": "X_AVM-DE_DownstreamCurrentUtilization"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetCommonLinkProperties",
+		"result": "X_AVM-DE_UpstreamCurrentUtilization"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetCommonLinkProperties",
+		"result": "X_AVM-DE_DownstreamCurrentMaxSpeed"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetCommonLinkProperties",
+		"result": "X_AVM-DE_UpstreamCurrentMaxSpeed"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetTotalBytesReceived",
+		"result": "TotalBytesReceived"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetTotalBytesSent",
+		"result": "TotalBytesSent"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetTotalPacketsReceived",
+		"result": "TotalPacketsReceived"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetTotalPacketsSent",
+		"result": "TotalPacketsSent"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANCommonInterfaceConfig:1",
+		"action": "X_AVM-DE_GetActiveProvider",
+		"result": "X_AVM-DE_Provider"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "Enable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "Status"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "DataPath"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "UpstreamCurrRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "DownstreamCurrRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "UpstreamMaxRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "DownstreamMaxRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "UpstreamNoiseMargin"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "DownstreamNoiseMargin"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "UpstreamAttenuation"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "DownstreamAttenuation"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "ATURVendor"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "ATURCountry"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "UpstreamPower"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetInfo",
+		"result": "DownstreamPower"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetStatisticsTotal",
+		"result": "Stats.Total.ReceiveBlocks"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetStatisticsTotal",
+		"result": "Stats.Total.TransmitBlocks"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetStatisticsTotal",
+		"result": "Stats.Total.CellDelin"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetStatisticsTotal",
+		"result": "Stats.Total.LinkRetrain"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetStatisticsTotal",
+		"result": "Stats.Total.InitErrors"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetStatisticsTotal",
+		"result": "Stats.Total.InitTimeouts"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetStatisticsTotal",
+		"result": "Stats.Total.LossOfFraming"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetStatisticsTotal",
+		"result": "Stats.Total.ErroredSecs"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetStatisticsTotal",
+		"result": "Stats.Total.SeverelyErroredSecs"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetStatisticsTotal",
+		"result": "Stats.Total.FECErrors"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetStatisticsTotal",
+		"result": "Stats.Total.ATUCFECErrors"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetStatisticsTotal",
+		"result": "Stats.Total.HECErrors"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetStatisticsTotal",
+		"result": "Stats.Total.ATUCHECErrors"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetStatisticsTotal",
+		"result": "Stats.Total.CRCErrors"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "GetStatisticsTotal",
+		"result": "Stats.Total.ATUCCRCErrors"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLDiagnoseInfo",
+		"result": "X_AVM-DE_DSLDiagnoseState"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLDiagnoseInfo",
+		"result": "X_AVM-DE_CableNokDistance"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLDiagnoseInfo",
+		"result": "X_AVM-DE_DSLLastDiagnoseTime"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLDiagnoseInfo",
+		"result": "X_AVM-DE_DSLSignalLossTime"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLDiagnoseInfo",
+		"result": "X_AVM-DE_DSLActive"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLDiagnoseInfo",
+		"result": "X_AVM-DE_DSLSync"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "SNRGds"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "SNRGus"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "SNRpsds"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "SNRpsus"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "SNRMTds"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "SNRMTus"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "LATNds"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "LATNus"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "Stats.Total.FECErrors"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "Stats.Total.CRCErrors"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "LinkStatus"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "ModulationType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "CurrentProfile"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "UpstreamCurrRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "DownstreamCurrRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "UpstreamMaxRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "DownstreamMaxRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "UpstreamNoiseMargin"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "DownstreamNoiseMargin"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "UpstreamAttenuation"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "DownstreamAttenuation"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "ATURVendor"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "ATURCountry"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "UpstreamPower"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLInterfaceConfig:1",
+		"action": "X_AVM-DE_GetDSLInfo",
+		"result": "DownstreamPower"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetATMEncapsulation",
+		"result": "ATMEncapsulation"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetAutoConfig",
+		"result": "AutoConfig"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetDSLLinkInfo",
+		"result": "LinkType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetDSLLinkInfo",
+		"result": "LinkStatus"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetDestinationAddress",
+		"result": "DestinationAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetInfo",
+		"result": "Enable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetInfo",
+		"result": "LinkStatus"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetInfo",
+		"result": "LinkType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetInfo",
+		"result": "DestinationAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetInfo",
+		"result": "ATMEncapsulation"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetInfo",
+		"result": "AutoConfig"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetInfo",
+		"result": "ATMQoS"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetInfo",
+		"result": "ATMPeakCellRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetInfo",
+		"result": "ATMSustainableCellRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetStatistics",
+		"result": "ATMTransmittedBlocks"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetStatistics",
+		"result": "ATMReceivedBlocks"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetStatistics",
+		"result": "AAL5CRCErrors"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANDSLLinkConfig:1",
+		"action": "GetStatistics",
+		"result": "ATMCRCErrors"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANEthernetLinkConfig:1",
+		"action": "GetEthernetLinkStatus",
+		"result": "EthernetLinkStatus"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetConnectionTypeInfo",
+		"result": "ConnectionType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetConnectionTypeInfo",
+		"result": "PossibleConnectionTypes"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetExternalIPAddress",
+		"result": "ExternalIPAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetInfo",
+		"result": "Enable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetInfo",
+		"result": "ConnectionStatus"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetInfo",
+		"result": "PossibleConnectionTypes"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetInfo",
+		"result": "ConnectionType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetInfo",
+		"result": "Name"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetInfo",
+		"result": "Uptime"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetInfo",
+		"result": "LastConnectionError"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetInfo",
+		"result": "RSIPAvailable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetInfo",
+		"result": "NATEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetInfo",
+		"result": "ExternalIPAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetInfo",
+		"result": "DNSServers"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetInfo",
+		"result": "MACAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetInfo",
+		"result": "ConnectionTrigger"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetInfo",
+		"result": "RouteProtocolRx"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetInfo",
+		"result": "DNSEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetInfo",
+		"result": "DNSOverrideAllowed"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetNATRSIPStatus",
+		"result": "RSIPAvailable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetNATRSIPStatus",
+		"result": "NATEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetPortMappingNumberOfEntries",
+		"result": "PortMappingNumberOfEntries"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetStatusInfo",
+		"result": "ConnectionStatus"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetStatusInfo",
+		"result": "LastConnectionError"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "GetStatusInfo",
+		"result": "Uptime"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANIPConnection:1",
+		"action": "X_GetDNSServers",
+		"result": "DNSServers"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetConnectionTypeInfo",
+		"result": "ConnectionType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetConnectionTypeInfo",
+		"result": "PossibleConnectionTypes"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetExternalIPAddress",
+		"result": "ExternalIPAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "Enable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "ConnectionStatus"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "PossibleConnectionTypes"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "ConnectionType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "Name"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "Uptime"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "UpstreamMaxBitRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "DownstreamMaxBitRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "LastConnectionError"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "IdleDisconnectTime"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "RSIPAvailable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "UserName"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "NATEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "ExternalIPAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "DNSServers"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "MACAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "ConnectionTrigger"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "LastAuthErrorInfo"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "MaxCharsUsername"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "MinCharsUsername"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsUsername"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "MaxCharsPassword"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "MinCharsPassword"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsPassword"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "TransportType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "RouteProtocolRx"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "PPPoEServiceName"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "RemoteIPAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "PPPoEACName"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "DNSEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetInfo",
+		"result": "DNSOverrideAllowed"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetLinkLayerMaxBitRates",
+		"result": "UpstreamMaxBitRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetLinkLayerMaxBitRates",
+		"result": "DownstreamMaxBitRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetNATRSIPStatus",
+		"result": "RSIPAvailable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetNATRSIPStatus",
+		"result": "NATEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetPortMappingNumberOfEntries",
+		"result": "PortMappingNumberOfEntries"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetStatusInfo",
+		"result": "ConnectionStatus"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetStatusInfo",
+		"result": "LastConnectionError"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetStatusInfo",
+		"result": "Uptime"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "GetUserName",
+		"result": "UserName"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "X_AVM-DE_GetAutoDisconnectTimeSpan",
+		"result": "X_AVM-DE_DisconnectPreventionEnable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "X_AVM-DE_GetAutoDisconnectTimeSpan",
+		"result": "X_AVM-DE_DisconnectPreventionHour"
+	},
+	{
+		"service": "urn:dslforum-org:service:WANPPPConnection:1",
+		"action": "X_GetDNSServers",
+		"result": "DNSServers"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetBSSID",
+		"result": "BSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetBasBeaconSecurityProperties",
+		"result": "BasicEncryptionModes"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetBasBeaconSecurityProperties",
+		"result": "BasicAuthenticationMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetBeaconAdvertisement",
+		"result": "BeaconAdvertisementEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetBeaconType",
+		"result": "BeaconType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetBeaconType",
+		"result": "X_AVM-DE_PossibleBeaconTypes"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetChannelInfo",
+		"result": "Channel"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetChannelInfo",
+		"result": "PossibleChannels"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetChannelInfo",
+		"result": "X_AVM-DE_AutoChannelEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetChannelInfo",
+		"result": "X_AVM-DE_FrequencyBand"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetDefaultWEPKeyIndex",
+		"result": "WEPKeyIndex"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "Enable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "Status"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "MaxBitRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "Channel"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "SSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "BeaconType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "X_AVM-DE_PossibleBeaconTypes"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "MACAddressControlEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "Standard"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "BSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "BasicEncryptionModes"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "BasicAuthenticationMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "MaxCharsSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "MinCharsSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "MinCharsPSK"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "MaxCharsPSK"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsPSK"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "X_AVM-DE_FrequencyBand"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetInfo",
+		"result": "X_AVM-DE_WLANGlobalEnable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetPacketStatistics",
+		"result": "TotalPacketsSent"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetPacketStatistics",
+		"result": "TotalPacketsReceived"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetSSID",
+		"result": "SSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetSecurityKeys",
+		"result": "WEPKey0"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetSecurityKeys",
+		"result": "WEPKey1"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetSecurityKeys",
+		"result": "WEPKey2"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetSecurityKeys",
+		"result": "WEPKey3"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetSecurityKeys",
+		"result": "PreSharedKey"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetSecurityKeys",
+		"result": "KeyPassphrase"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetStatistics",
+		"result": "TotalPacketsSent"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetStatistics",
+		"result": "TotalPacketsReceived"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "GetTotalAssociations",
+		"result": "TotalAssociations"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetIPTVOptimized",
+		"result": "X_AVM-DE_IPTVoptimize"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetNightControl",
+		"result": "NightControl"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetNightControl",
+		"result": "NightTimeControlNoForcedOff"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "AssociatedDeviceMACAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "SSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "BSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "BeaconType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "Channel"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "Standard"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_AutoChannelEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_ChannelWidth"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_FrequencyBand"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_SignalStrength"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_Speed"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_SpeedRX"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_SpeedMax"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_SpeedRXMax"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANDeviceListPath",
+		"result": "X_AVM-DE_WLANDeviceListPath"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_APEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_APType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_FrequencyBand"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_TimeoutActive"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_Timeout"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_TimeRemain"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_NoForcedOff"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_UserIsolation"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_EncryptionMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_LastChangedStamp"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "Enable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "BeaconType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "KeyPassphrase"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "SSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "BSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "TrafficMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "ManualSpeed"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "MaxSpeedDS"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "MaxSpeedUS"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWPSInfo",
+		"result": "X_AVM-DE_WPSMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:1",
+		"action": "X_AVM-DE_GetWPSInfo",
+		"result": "X_AVM-DE_WPSStatus"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetBSSID",
+		"result": "BSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetBasBeaconSecurityProperties",
+		"result": "BasicEncryptionModes"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetBasBeaconSecurityProperties",
+		"result": "BasicAuthenticationMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetBeaconAdvertisement",
+		"result": "BeaconAdvertisementEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetBeaconType",
+		"result": "BeaconType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetBeaconType",
+		"result": "X_AVM-DE_PossibleBeaconTypes"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetChannelInfo",
+		"result": "Channel"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetChannelInfo",
+		"result": "PossibleChannels"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetChannelInfo",
+		"result": "X_AVM-DE_AutoChannelEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetChannelInfo",
+		"result": "X_AVM-DE_FrequencyBand"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetDefaultWEPKeyIndex",
+		"result": "WEPKeyIndex"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "Enable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "Status"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "MaxBitRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "Channel"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "SSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "BeaconType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "X_AVM-DE_PossibleBeaconTypes"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "MACAddressControlEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "Standard"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "BSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "BasicEncryptionModes"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "BasicAuthenticationMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "MaxCharsSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "MinCharsSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "AllowedCharsSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "MinCharsPSK"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "MaxCharsPSK"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "AllowedCharsPSK"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "X_AVM-DE_FrequencyBand"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetInfo",
+		"result": "X_AVM-DE_WLANGlobalEnable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetPacketStatistics",
+		"result": "TotalPacketsSent"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetPacketStatistics",
+		"result": "TotalPacketsReceived"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetSSID",
+		"result": "SSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetSecurityKeys",
+		"result": "WEPKey0"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetSecurityKeys",
+		"result": "WEPKey1"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetSecurityKeys",
+		"result": "WEPKey2"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetSecurityKeys",
+		"result": "WEPKey3"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetSecurityKeys",
+		"result": "PreSharedKey"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetSecurityKeys",
+		"result": "KeyPassphrase"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetStatistics",
+		"result": "TotalPacketsSent"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetStatistics",
+		"result": "TotalPacketsReceived"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "GetTotalAssociations",
+		"result": "TotalAssociations"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetIPTVOptimized",
+		"result": "X_AVM-DE_IPTVoptimize"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetNightControl",
+		"result": "NightControl"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetNightControl",
+		"result": "NightTimeControlNoForcedOff"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "AssociatedDeviceMACAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "SSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "BSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "BeaconType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "Channel"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "Standard"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_AutoChannelEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_ChannelWidth"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_FrequencyBand"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_SignalStrength"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_Speed"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_SpeedRX"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_SpeedMax"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_SpeedRXMax"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANDeviceListPath",
+		"result": "X_AVM-DE_WLANDeviceListPath"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_APEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_APType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_FrequencyBand"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_TimeoutActive"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_Timeout"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_TimeRemain"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_NoForcedOff"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_UserIsolation"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_EncryptionMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_LastChangedStamp"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "Enable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "BeaconType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "KeyPassphrase"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "SSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "BSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "TrafficMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "ManualSpeed"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "MaxSpeedDS"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "MaxSpeedUS"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWPSInfo",
+		"result": "X_AVM-DE_WPSMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:2",
+		"action": "X_AVM-DE_GetWPSInfo",
+		"result": "X_AVM-DE_WPSStatus"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetBSSID",
+		"result": "BSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetBasBeaconSecurityProperties",
+		"result": "BasicEncryptionModes"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetBasBeaconSecurityProperties",
+		"result": "BasicAuthenticationMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetBeaconAdvertisement",
+		"result": "BeaconAdvertisementEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetBeaconType",
+		"result": "BeaconType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetBeaconType",
+		"result": "X_AVM-DE_PossibleBeaconTypes"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetChannelInfo",
+		"result": "Channel"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetChannelInfo",
+		"result": "PossibleChannels"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetChannelInfo",
+		"result": "X_AVM-DE_AutoChannelEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetChannelInfo",
+		"result": "X_AVM-DE_FrequencyBand"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetDefaultWEPKeyIndex",
+		"result": "WEPKeyIndex"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "Enable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "Status"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "MaxBitRate"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "Channel"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "SSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "BeaconType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "X_AVM-DE_PossibleBeaconTypes"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "MACAddressControlEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "Standard"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "BSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "BasicEncryptionModes"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "BasicAuthenticationMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "MaxCharsSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "MinCharsSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "AllowedCharsSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "MinCharsPSK"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "MaxCharsPSK"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "AllowedCharsPSK"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "X_AVM-DE_FrequencyBand"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetInfo",
+		"result": "X_AVM-DE_WLANGlobalEnable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetPacketStatistics",
+		"result": "TotalPacketsSent"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetPacketStatistics",
+		"result": "TotalPacketsReceived"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetSSID",
+		"result": "SSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetSecurityKeys",
+		"result": "WEPKey0"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetSecurityKeys",
+		"result": "WEPKey1"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetSecurityKeys",
+		"result": "WEPKey2"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetSecurityKeys",
+		"result": "WEPKey3"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetSecurityKeys",
+		"result": "PreSharedKey"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetSecurityKeys",
+		"result": "KeyPassphrase"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetStatistics",
+		"result": "TotalPacketsSent"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetStatistics",
+		"result": "TotalPacketsReceived"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "GetTotalAssociations",
+		"result": "TotalAssociations"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetIPTVOptimized",
+		"result": "X_AVM-DE_IPTVoptimize"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetNightControl",
+		"result": "NightControl"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetNightControl",
+		"result": "NightTimeControlNoForcedOff"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "AssociatedDeviceMACAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "SSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "BSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "BeaconType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "Channel"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "Standard"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_AutoChannelEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_ChannelWidth"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_FrequencyBand"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_SignalStrength"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_Speed"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_SpeedRX"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_SpeedMax"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANConnectionInfo",
+		"result": "X_AVM-DE_SpeedRXMax"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANDeviceListPath",
+		"result": "X_AVM-DE_WLANDeviceListPath"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_APEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_APType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_FrequencyBand"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_TimeoutActive"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_Timeout"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_TimeRemain"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_NoForcedOff"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_UserIsolation"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_EncryptionMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANExtInfo",
+		"result": "X_AVM-DE_LastChangedStamp"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "Enable"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "BeaconType"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "KeyPassphrase"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "SSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "BSSID"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "TrafficMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "ManualSpeed"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "MaxSpeedDS"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWLANHybridMode",
+		"result": "MaxSpeedUS"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWPSInfo",
+		"result": "X_AVM-DE_WPSMode"
+	},
+	{
+		"service": "urn:dslforum-org:service:WLANConfiguration:3",
+		"action": "X_AVM-DE_GetWPSInfo",
+		"result": "X_AVM-DE_WPSStatus"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetAppRemoteInfo",
+		"result": "SubnetMask"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetAppRemoteInfo",
+		"result": "IPAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetAppRemoteInfo",
+		"result": "ExternalIPAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetAppRemoteInfo",
+		"result": "ExternalIPv6Address"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetAppRemoteInfo",
+		"result": "RemoteAccessDDNSEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetAppRemoteInfo",
+		"result": "RemoteAccessDDNSDomain"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetAppRemoteInfo",
+		"result": "MyFritzEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetAppRemoteInfo",
+		"result": "MyFritzDynDNSName"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetConfig",
+		"result": "ConfigRight"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetConfig",
+		"result": "AppRight"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetConfig",
+		"result": "NasRight"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetConfig",
+		"result": "PhoneRight"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetConfig",
+		"result": "DialRight"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetConfig",
+		"result": "HomeautoRight"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetConfig",
+		"result": "InternetRights"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetConfig",
+		"result": "AccessFromInternet"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MinCharsAppId"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MaxCharsAppId"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsAppId"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MinCharsAppDisplayName"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MaxCharsAppDisplayName"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MinCharsAppUsername"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MaxCharsAppUsername"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsAppUsername"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MinCharsAppPassword"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MaxCharsAppPassword"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsAppPassword"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MinCharsIPSecIdentifier"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MaxCharsIPSecIdentifier"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsIPSecIdentifier"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsCryptAlgos"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsAppAVMAddress"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MinCharsFilter"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MaxCharsFilter"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsFilter"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MinCharsIPSecPreSharedKey"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MaxCharsIPSecPreSharedKey"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsIPSecPreSharedKey"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MinCharsIPSecXauthUsername"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MaxCharsIPSecXauthUsername"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsIPSecXauthUsername"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MinCharsIPSecXauthPassword"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "MaxCharsIPSecXauthPassword"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_AppSetup:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsIPSecXauthPassword"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Auth:1",
+		"action": "GetInfo",
+		"result": "Enabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Auth:1",
+		"action": "GetState",
+		"result": "State"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Dect:1",
+		"action": "GetDectListPath",
+		"result": "DectListPath"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Dect:1",
+		"action": "GetNumberOfDectEntries",
+		"result": "NumberOfEntries"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Filelinks:1",
+		"action": "GetFilelinkListPath",
+		"result": "FilelinkListPath"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Filelinks:1",
+		"action": "GetNumberOfFilelinkEntries",
+		"result": "NumberOfEntries"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Homeauto:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsAIN"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Homeauto:1",
+		"action": "GetInfo",
+		"result": "MaxCharsAIN"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Homeauto:1",
+		"action": "GetInfo",
+		"result": "MinCharsAIN"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Homeauto:1",
+		"action": "GetInfo",
+		"result": "MaxCharsDeviceName"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Homeauto:1",
+		"action": "GetInfo",
+		"result": "MinCharsDeviceName"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Homeplug:1",
+		"action": "GetNumberOfDeviceEntries",
+		"result": "NumberOfEntries"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_HostFilter:1",
+		"action": "MarkTicket",
+		"result": "TicketID"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_MyFritz:1",
+		"action": "GetInfo",
+		"result": "Enabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_MyFritz:1",
+		"action": "GetInfo",
+		"result": "DeviceRegistered"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_MyFritz:1",
+		"action": "GetInfo",
+		"result": "DynDNSName"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_MyFritz:1",
+		"action": "GetInfo",
+		"result": "Port"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_MyFritz:1",
+		"action": "GetInfo",
+		"result": "State"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_MyFritz:1",
+		"action": "GetInfo",
+		"result": "Email"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_MyFritz:1",
+		"action": "GetNumberOfServices",
+		"result": "NumberOfServices"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_OnTel:1",
+		"action": "GetCallBarringList",
+		"result": "PhonebookURL"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_OnTel:1",
+		"action": "GetCallList",
+		"result": "CallListURL"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_OnTel:1",
+		"action": "GetDECTHandsetList",
+		"result": "DectIDList"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_OnTel:1",
+		"action": "GetDeflections",
+		"result": "DeflectionList"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_OnTel:1",
+		"action": "GetInfo",
+		"result": "Enable"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_OnTel:1",
+		"action": "GetInfo",
+		"result": "Status"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_OnTel:1",
+		"action": "GetInfo",
+		"result": "LastConnect"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_OnTel:1",
+		"action": "GetInfo",
+		"result": "Url"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_OnTel:1",
+		"action": "GetInfo",
+		"result": "ServiceId"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_OnTel:1",
+		"action": "GetInfo",
+		"result": "Username"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_OnTel:1",
+		"action": "GetInfo",
+		"result": "Name"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_OnTel:1",
+		"action": "GetNumberOfDeflections",
+		"result": "NumberOfDeflections"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_OnTel:1",
+		"action": "GetNumberOfEntries",
+		"result": "OnTelNumberOfEntries"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_OnTel:1",
+		"action": "GetPhonebookList",
+		"result": "PhonebookList"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_RemoteAccess:1",
+		"action": "GetDDNSInfo",
+		"result": "Enabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_RemoteAccess:1",
+		"action": "GetDDNSInfo",
+		"result": "ProviderName"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_RemoteAccess:1",
+		"action": "GetDDNSInfo",
+		"result": "UpdateURL"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_RemoteAccess:1",
+		"action": "GetDDNSInfo",
+		"result": "Domain"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_RemoteAccess:1",
+		"action": "GetDDNSInfo",
+		"result": "StatusIPv4"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_RemoteAccess:1",
+		"action": "GetDDNSInfo",
+		"result": "StatusIPv6"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_RemoteAccess:1",
+		"action": "GetDDNSInfo",
+		"result": "Username"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_RemoteAccess:1",
+		"action": "GetDDNSInfo",
+		"result": "Mode"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_RemoteAccess:1",
+		"action": "GetDDNSInfo",
+		"result": "ServerIPv4"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_RemoteAccess:1",
+		"action": "GetDDNSInfo",
+		"result": "ServerIPv6"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_RemoteAccess:1",
+		"action": "GetDDNSProviders",
+		"result": "ProviderList"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_RemoteAccess:1",
+		"action": "GetInfo",
+		"result": "Enabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_RemoteAccess:1",
+		"action": "GetInfo",
+		"result": "Port"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_RemoteAccess:1",
+		"action": "GetInfo",
+		"result": "Username"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_RemoteAccess:1",
+		"action": "GetInfo",
+		"result": "LetsEncryptEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_RemoteAccess:1",
+		"action": "GetInfo",
+		"result": "LetsEncryptState"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Speedtest:1",
+		"action": "GetInfo",
+		"result": "EnableTcp"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Speedtest:1",
+		"action": "GetInfo",
+		"result": "EnableUdp"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Speedtest:1",
+		"action": "GetInfo",
+		"result": "EnableUdpBidirect"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Speedtest:1",
+		"action": "GetInfo",
+		"result": "WANEnableTcp"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Speedtest:1",
+		"action": "GetInfo",
+		"result": "WANEnableUdp"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Speedtest:1",
+		"action": "GetInfo",
+		"result": "PortTcp"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Speedtest:1",
+		"action": "GetInfo",
+		"result": "PortUdp"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Speedtest:1",
+		"action": "GetInfo",
+		"result": "PortUdpBidirect"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Speedtest:1",
+		"action": "GetStatistics",
+		"result": "ByteCount"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Speedtest:1",
+		"action": "GetStatistics",
+		"result": "KbitsCurrent"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Speedtest:1",
+		"action": "GetStatistics",
+		"result": "KbitsAvg"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Speedtest:1",
+		"action": "GetStatistics",
+		"result": "PacketCount"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Speedtest:1",
+		"action": "GetStatistics",
+		"result": "PPSCurrent"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Speedtest:1",
+		"action": "GetStatistics",
+		"result": "PPSAvg"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Storage:1",
+		"action": "GetInfo",
+		"result": "FTPEnable"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Storage:1",
+		"action": "GetInfo",
+		"result": "FTPStatus"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Storage:1",
+		"action": "GetInfo",
+		"result": "SMBEnable"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Storage:1",
+		"action": "GetInfo",
+		"result": "FTPWANEnable"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Storage:1",
+		"action": "GetInfo",
+		"result": "FTPWANSSLOnly"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Storage:1",
+		"action": "GetInfo",
+		"result": "FTPWANPort"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Storage:1",
+		"action": "GetUserInfo",
+		"result": "Enable"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Storage:1",
+		"action": "GetUserInfo",
+		"result": "Username"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Storage:1",
+		"action": "GetUserInfo",
+		"result": "X_AVM-DE_NetworkAccessReadOnly"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Storage:1",
+		"action": "RequestFTPServerWAN",
+		"result": "FTPWANPort"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_Storage:1",
+		"action": "RequestFTPServerWAN",
+		"result": "FTPWANLifetime"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_TAM:1",
+		"action": "GetList",
+		"result": "TAMList"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_UPnP:1",
+		"action": "GetInfo",
+		"result": "Enable"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_UPnP:1",
+		"action": "GetInfo",
+		"result": "UPnPMediaServer"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_USPController:1",
+		"action": "GetInfo",
+		"result": "MinCharsEndpointID"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_USPController:1",
+		"action": "GetInfo",
+		"result": "MaxCharsEndpointID"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_USPController:1",
+		"action": "GetInfo",
+		"result": "AllowedCharsEndpointID"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_USPController:1",
+		"action": "GetInfo",
+		"result": "MinCharsHostname"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_USPController:1",
+		"action": "GetInfo",
+		"result": "MaxCharsHostname"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_USPController:1",
+		"action": "GetInfo",
+		"result": "MinCharsPath"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_USPController:1",
+		"action": "GetInfo",
+		"result": "MaxCharsPath"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_USPController:1",
+		"action": "GetInfo",
+		"result": "MinCharsUsername"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_USPController:1",
+		"action": "GetInfo",
+		"result": "MaxCharsUsername"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_USPController:1",
+		"action": "GetInfo",
+		"result": "MinCharsPassword"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_USPController:1",
+		"action": "GetInfo",
+		"result": "MaxCharsPassword"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_USPController:1",
+		"action": "GetInfo",
+		"result": "USPMyFRITZEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_USPController:1",
+		"action": "GetUSPControllerNumberOfEntries",
+		"result": "USPControllerNumberOfEntries"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_USPController:1",
+		"action": "GetUSPMyFRITZEnable",
+		"result": "USPMyFRITZEnabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetAccessTechnology",
+		"result": "AccessTechnology"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetAccessTechnology",
+		"result": "PossibleAccessTechnology"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetAccessTechnology",
+		"result": "CurrentAccessTechnology"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetBandCapabilities",
+		"result": "BandCapabilitiesLTE"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetBandCapabilities",
+		"result": "BandCapabilities5GNSA"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetBandCapabilities",
+		"result": "BandCapabilities5GSA"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetEnabledBandCapabilities",
+		"result": "BandCapabilitiesLTE"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetEnabledBandCapabilities",
+		"result": "BandCapabilities5GNSA"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetEnabledBandCapabilities",
+		"result": "BandCapabilities5GSA"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfo",
+		"result": "Enabled"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfo",
+		"result": "Status"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfo",
+		"result": "PINFailureCount"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfo",
+		"result": "PUKFailureCount"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfoEx",
+		"result": "SerialNumber"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfoEx",
+		"result": "EnableVoIPPDN"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfoEx",
+		"result": "PPPUsername"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfoEx",
+		"result": "PPPUsernameVoIP"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfoEx",
+		"result": "SoftwareVersion"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfoEx",
+		"result": "Uptime"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfoEx",
+		"result": "PDN1_MTU"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfoEx",
+		"result": "PDN2_MTU"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfoEx",
+		"result": "IMSI"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfoEx",
+		"result": "APN_VoIP"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfoEx",
+		"result": "APN"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfoEx",
+		"result": "Roaming"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfoEx",
+		"result": "CurrentAccessTechnology"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfoEx",
+		"result": "SignalRSRP0"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfoEx",
+		"result": "SignalRSRP1"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetInfoEx",
+		"result": "CellList"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetPreferredAccessTechnology",
+		"result": "PreferredAccessTechnology"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WANMobileConnection:1",
+		"action": "GetPreferredAccessTechnology",
+		"result": "PossiblePreferredAccessTechnology"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WebDAVClient:1",
+		"action": "GetInfo",
+		"result": "Enable"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WebDAVClient:1",
+		"action": "GetInfo",
+		"result": "HostURL"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WebDAVClient:1",
+		"action": "GetInfo",
+		"result": "Username"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_AVM-DE_WebDAVClient:1",
+		"action": "GetInfo",
+		"result": "MountpointName"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetExistingVoIPNumbers",
+		"result": "ExistingVoIPNumbers"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfo",
+		"result": "FaxT38Enable"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfo",
+		"result": "VoiceCoding"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "VoIPNumberMinChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "VoIPNumberMaxChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "VoIPNumberAllowedChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "VoIPUsernameMinChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "VoIPUsernameMaxChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "VoIPUsernameAllowedChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "VoIPPasswordMinChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "VoIPPasswordMaxChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "VoIPPasswordAllowedChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "VoIPRegistrarMinChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "VoIPRegistrarMaxChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "VoIPRegistrarAllowedChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "VoIPSTUNServerMinChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "VoIPSTUNServerMaxChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "VoIPSTUNServerAllowedChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "X_AVM-DE_ClientUsernameMinChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "X_AVM-DE_ClientUsernameMaxChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "X_AVM-DE_ClientUsernameAllowedChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "X_AVM-DE_ClientPasswordMinChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "X_AVM-DE_ClientPasswordMaxChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetInfoEx",
+		"result": "X_AVM-DE_ClientPasswordAllowedChars"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetMaxVoIPNumbers",
+		"result": "MaxVoIPNumbers"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetVoIPCommonAreaCode",
+		"result": "VoIPAreaCode"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "GetVoIPCommonCountryCode",
+		"result": "VoIPCountryCode"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "X_AVM-DE_DialGetConfig",
+		"result": "X_AVM-DE_PhoneName"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "X_AVM-DE_GetClients",
+		"result": "X_AVM-DE_ClientList"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "X_AVM-DE_GetNumberOfAlarmClocks",
+		"result": "X_AVM-DE_NumberOfAlarmClocks"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "X_AVM-DE_GetNumberOfClients",
+		"result": "X_AVM-DE_NumberOfClients"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "X_AVM-DE_GetNumberOfNumbers",
+		"result": "NumberOfNumbers"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "X_AVM-DE_GetNumbers",
+		"result": "NumberList"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "X_AVM-DE_GetVoIPAccounts",
+		"result": "X_AVM-DE_VoIPAccountList"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "X_AVM-DE_GetVoIPCommonAreaCode",
+		"result": "X_AVM-DE_OKZ"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "X_AVM-DE_GetVoIPCommonAreaCode",
+		"result": "X_AVM-DE_OKZPrefix"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "X_AVM-DE_GetVoIPCommonCountryCode",
+		"result": "X_AVM-DE_LKZ"
+	},
+	{
+		"service": "urn:dslforum-org:service:X_VoIP:1",
+		"action": "X_AVM-DE_GetVoIPCommonCountryCode",
+		"result": "X_AVM-DE_LKZPrefix"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "ByteSendRate"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "ByteReceiveRate"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "PacketSendRate"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "PacketReceiveRate"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "TotalBytesSent"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "TotalBytesReceived"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "AutoDisconnectTime"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "IdleDisconnectTime"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "DNSServer1"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "DNSServer2"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "VoipDNSServer1"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "VoipDNSServer2"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "UpnpControlEnabled"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "RoutedBridgedModeBoth"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "X_AVM_DE_TotalBytesSent64"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "X_AVM_DE_TotalBytesReceived64"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "X_AVM_DE_WANAccessType"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetCommonLinkProperties",
+		"result": "WANAccessType"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetCommonLinkProperties",
+		"result": "Layer1UpstreamMaxBitRate"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetCommonLinkProperties",
+		"result": "Layer1DownstreamMaxBitRate"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetCommonLinkProperties",
+		"result": "PhysicalLinkStatus"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetTotalBytesReceived",
+		"result": "TotalBytesReceived"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetTotalBytesSent",
+		"result": "TotalBytesSent"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetTotalPacketsReceived",
+		"result": "TotalPacketsReceived"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetTotalPacketsSent",
+		"result": "TotalPacketsSent"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "X_AVM_DE_GetDsliteStatus",
+		"result": "X_AVM_DE_DsliteStatus"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "X_AVM_DE_GetIPTVInfos",
+		"result": "X_AVM_DE_IPTV_Enabled"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "X_AVM_DE_GetIPTVInfos",
+		"result": "X_AVM_DE_IPTV_Provider"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "X_AVM_DE_GetIPTVInfos",
+		"result": "X_AVM_DE_IPTV_URL"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANDSLLinkConfig:1",
+		"action": "GetATMEncapsulation",
+		"result": "ATMEncapsulation"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANDSLLinkConfig:1",
+		"action": "GetAutoConfig",
+		"result": "AutoConfig"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANDSLLinkConfig:1",
+		"action": "GetDSLLinkInfo",
+		"result": "LinkType"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANDSLLinkConfig:1",
+		"action": "GetDSLLinkInfo",
+		"result": "LinkStatus"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANDSLLinkConfig:1",
+		"action": "GetDestinationAddress",
+		"result": "DestinationAddress"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANDSLLinkConfig:1",
+		"action": "GetFCSPreserved",
+		"result": "FCSPreserved"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANDSLLinkConfig:1",
+		"action": "GetModulationType",
+		"result": "ModulationType"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "GetAutoDisconnectTime",
+		"result": "AutoDisconnectTime"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "GetConnectionTypeInfo",
+		"result": "ConnectionType"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "GetConnectionTypeInfo",
+		"result": "PossibleConnectionTypes"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "GetExternalIPAddress",
+		"result": "ExternalIPAddress"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "GetIdleDisconnectTime",
+		"result": "IdleDisconnectTime"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "GetNATRSIPStatus",
+		"result": "RSIPAvailable"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "GetNATRSIPStatus",
+		"result": "NATEnabled"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "GetStatusInfo",
+		"result": "ConnectionStatus"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "GetStatusInfo",
+		"result": "LastConnectionError"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "GetStatusInfo",
+		"result": "Uptime"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "X_AVM_DE_GetDNSServer",
+		"result": "IPv4DNSServer1"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "X_AVM_DE_GetDNSServer",
+		"result": "IPv4DNSServer2"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "X_AVM_DE_GetExternalIPv6Address",
+		"result": "ExternalIPv6Address"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "X_AVM_DE_GetExternalIPv6Address",
+		"result": "PrefixLength"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "X_AVM_DE_GetExternalIPv6Address",
+		"result": "ValidLifetime"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "X_AVM_DE_GetExternalIPv6Address",
+		"result": "PreferedLifetime"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "X_AVM_DE_GetIPv6DNSServer",
+		"result": "IPv6DNSServer1"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "X_AVM_DE_GetIPv6DNSServer",
+		"result": "ValidLifetime1"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "X_AVM_DE_GetIPv6DNSServer",
+		"result": "IPv6DNSServer2"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "X_AVM_DE_GetIPv6DNSServer",
+		"result": "ValidLifetime2"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "X_AVM_DE_GetIPv6Prefix",
+		"result": "IPv6Prefix"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "X_AVM_DE_GetIPv6Prefix",
+		"result": "PrefixLength"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "X_AVM_DE_GetIPv6Prefix",
+		"result": "ValidLifetime"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPConnection:1",
+		"action": "X_AVM_DE_GetIPv6Prefix",
+		"result": "PreferedLifetime"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPv6FirewallControl:1",
+		"action": "GetFirewallStatus",
+		"result": "FirewallEnabled"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANIPv6FirewallControl:1",
+		"action": "GetFirewallStatus",
+		"result": "InboundPinholeAllowed"
+	}
+]
