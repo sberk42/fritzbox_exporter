@@ -54,7 +54,7 @@ jobs:
       - name: Tag Image
         id: tag_image
         run: |
-          DOCKER_REPOSITORY=ghcr.io/${{ github.repository }}
+          DOCKER_REPOSITORY=ghcr.io/${{ github.repository }}/$IMAGE_NAME
 
           # Change all uppercase to lowercase
           DOCKER_REPOSITORY=$(echo $DOCKER_REPOSITORY | tr '[A-Z]' '[a-z]')
