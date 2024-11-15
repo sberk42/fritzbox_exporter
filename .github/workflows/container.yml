@@ -154,8 +154,7 @@ jobs:
         uses: aquasecurity/trivy-action@master
         with:
           image-ref: "${{ needs.prepare.outputs.DOCKER_REPOSITORY }}:${{ github.sha }}"
-          format: 'template' 
-          template: '@/contrib/sarif.tpl'
+          format: 'sarif' 
           output: 'trivy-results.sarif'
           ignore-unfixed: true
           vuln-type: 'os,library'
