@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # Build Image
-FROM golang:1.22.7 AS builder
+FROM golang:1.22.7-alpine3.20 AS builder
 RUN go install github.com/sberk42/fritzbox_exporter@latest \
     && mkdir /app \
     && mv /go/bin/fritzbox_exporter /app
