@@ -4,7 +4,7 @@ This exporter exports some variables from an
 [AVM Fritzbox](http://avm.de/produkte/fritzbox/)
 to prometheus.
 
-This exporter is tested with a Fritzbox 7590 software version 07.12, 07.20, 07.21, 07.25, 07.29, 07.50, 07.57 and 07.59.
+This exporter is tested with a Fritzbox 7590 software version 07.12, 07.20, 07.21, 07.25, 07.29, 07.50, 07.57 , 07.59 and 08.00.
 
 The goal of the fork is:
   - [x] allow passing of username / password using evironment variable
@@ -135,6 +135,7 @@ For a list of all available metrics, see the dumps below (the format is the same
 - [FritzBox 7590 v7.50](all_available_metrics_7590_7.50.json)
 - [FritzBox 7590 v7.57](all_available_metrics_7590_7.57.json)
 - [FritzBox 7590 v7.59](all_available_metrics_7590_7.59.json) - same as 7.57
+- [FritzBox 7590 v8.00](all_available_metrics_7590_8.00.json)
 ## Grafana Dashboard
 
 The dashboard is now also published on [Grafana](https://grafana.com/grafana/dashboards/12579).
