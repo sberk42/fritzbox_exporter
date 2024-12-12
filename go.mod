@@ -1,6 +1,6 @@
 module github.com/sberk42/fritzbox_exporter
 
-go 1.22.7
+go 1.23.3
 
 require (
 	github.com/namsral/flag v1.7.4-pre
@@ -16,7 +16,7 @@ require (
 	github.com/klauspost/compress v1.17.11 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/prometheus/client_model v0.6.1 // indirect
-	github.com/prometheus/common v0.60.1 // indirect
+	github.com/prometheus/common v0.61.0 // indirect
 	github.com/prometheus/procfs v0.15.1 // indirect
 	golang.org/x/sys v0.28.0 // indirect
 	google.golang.org/protobuf v1.35.2 // indirect
