@@ -853,13 +853,14 @@ func main() {
 	}
 
 	// init metrics
+	renw := regexp.MustCompile(`\W+`)
 	for _, m := range metrics {
 		pd := &m.PromDesc
 
-		// make labels lower case
+		// make labels lower and replace - with _
 		labels := make([]string, len(pd.VarLabels))
 		for i, l := range pd.VarLabels {
-			labels[i] = strings.ToLower(l)
+			labels[i] = renw.ReplaceAllString(strings.ToLower(strings.ReplaceAll(l, "-", "_")), "")
 		}
 
 		// create fixed labels values
