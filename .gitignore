@@ -1,3 +1,4 @@
 fritzbox_exporter
 .project
+.env
 vendor/*
