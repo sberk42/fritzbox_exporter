@@ -1,4 +1,4 @@
-module github.com/sberk42/fritzbox_exporter
+module github.com/az82/fritzbox_exporter
 
 go 1.23
 
