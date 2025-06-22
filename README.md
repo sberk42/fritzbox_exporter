@@ -26,7 +26,7 @@ Other changes:
 
 ## Building
 
-    go install github.com/sberk42/fritzbox_exporter@latest
+    go install github.com/az82/fritzbox_exporter@latest
 
 ## Running
 
@@ -45,7 +45,7 @@ Heimnetzübersicht > Netzwerkeinstellungen" has to be enabled.
 ### Using docker
 
 The image is available as package using:
-`docker pull ghcr.io/sberk42/fritzbox_exporter/fritzbox_exporter:latest`
+`docker pull ghcr.io/az82/fritzbox_exporter/fritzbox_exporter:latest`
 or you can build the container yourself: `docker build --tag fritzbox-prometheus-exporter:latest .`
 
 Then start the container:

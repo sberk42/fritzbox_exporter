@@ -35,8 +35,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/sirupsen/logrus"
 
-	lua "github.com/sberk42/fritzbox_exporter/fritzbox_lua"
-	upnp "github.com/sberk42/fritzbox_exporter/fritzbox_upnp"
+	lua "github.com/az82/fritzbox_exporter/fritzbox_lua"
+	upnp "github.com/az82/fritzbox_exporter/fritzbox_upnp"
 )
 
 const serviceLoadRetryTime = 1 * time.Minute
