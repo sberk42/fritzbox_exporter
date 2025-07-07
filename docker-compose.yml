@@ -14,8 +14,17 @@ services:
     #expose:
     #  - "9042"
     restart: unless-stopped
+
+    # environment values can be passed via .env file
+    # these defaults are commented out and can be overridden in a stack.env or .env file
+    # environment:
+    #   USERNAME: your_fritzbox_username
+    #   PASSWORD: your_fritzbox_password
+    #   GATEWAY_URL: http://192.168.0.1:49000
+    #   LISTEN_ADDRESS: 0.0.0.0:9042
+
     environment:
-      USERNAME: your_fritzbox_username 
-      PASSWORD: your_fritzbox_password
-      GATEWAY_URL: http://192.168.0.1:49000
-      LISTEN_ADDRESS: 0.0.0.0:9042
+      - USERNAME
+      - PASSWORD
+      - GATEWAY_URL
+      - LISTEN_ADDRESS
