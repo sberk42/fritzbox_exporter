@@ -134,6 +134,7 @@ For lua metrics open UI in browser and check the json files used for the various
 
 For a list of all available metrics, see the dumps below (the format is the same as in the metrics.json file, so it can be used to easily add further metrics to retrieve):
 
+- [FritzBox 5690 Pro v8.03](all_available_metrics_5690_pro_8.03.json)
 - [FritzBox 6591 v7.29](all_available_metrics_6591_7.29.json)
 - [FritzBox 6690 v7.57](all_available_metrics_6690_7.57.json)
 - [FritzBox 7590 v7.12](all_available_metrics_7590_7.12.json)
