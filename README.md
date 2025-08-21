@@ -146,6 +146,7 @@ For a list of all available metrics, see the dumps below (the format is the same
 - [FritzBox 7590 v7.59](all_available_metrics_7590_7.59.json) - same as 7.57
 - [FritzBox 7590 v8.00](all_available_metrics_7590_8.00.json)
 - [FritzBox 7590 v8.02](all_available_metrics_7590_8.02.json)
+- [FritzBox 7590 v8.20](all_available_metrics_7590_8.20.json)
 
 ## Grafana Dashboard
 
