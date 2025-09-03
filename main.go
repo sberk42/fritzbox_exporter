@@ -300,6 +300,8 @@ func (fc *FritzboxCollector) reportMetric(ch chan<- prometheus.Metric, m *Metric
 
 	var floatval float64
 	switch tval := val.(type) {
+	case float64:
+		floatval = tval
 	case uint64:
 		floatval = float64(tval)
 	case bool:

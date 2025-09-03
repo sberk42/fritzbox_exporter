@@ -56,9 +56,45 @@
 	{
 		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
 		"action": "GetAddonInfos",
+		"result": "X_AVM_DE_TotalBytesReceived64",
+		"promDesc": {
+			"fqName": "gateway_traffic_64",
+			"help": "traffic on gateway interface",
+			"varLabels": [
+				"gateway"
+			],
+			"fixedLabels": {
+				"direction": "Received",
+				"unit": "Bytes",
+				"interface": "WAN"
+			}
+		},
+		"promType": "CounterValue"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
 		"result": "TotalBytesSent",
 		"promDesc": {
 			"fqName": "gateway_traffic",
+			"help": "traffic on gateway interface",
+			"varLabels": [
+				"gateway"
+			],
+			"fixedLabels": {
+				"direction": "Sent",
+				"unit": "Bytes",
+				"interface": "WAN"
+			}
+		},
+		"promType": "CounterValue"
+	},
+	{
+		"service": "urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1",
+		"action": "GetAddonInfos",
+		"result": "X_AVM_DE_TotalBytesSent64",
+		"promDesc": {
+			"fqName": "gateway_traffic_64",
 			"help": "traffic on gateway interface",
 			"varLabels": [
 				"gateway"

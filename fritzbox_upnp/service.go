@@ -475,6 +475,15 @@ func (a *Action) parseSoapResponse(r io.Reader) (Result, error) {
 func convertResult(val string, arg *Argument) (interface{}, error) {
 	switch arg.StateVariable.DataType {
 	case "string":
+		// dirty workaround for X_AVM_DE_xxx64 values reporting type as string
+		is_x_avm_64 := strings.HasPrefix(arg.StateVariable.Name, "X_AVM_DE_") && strings.HasSuffix(arg.StateVariable.Name, "64")
+		if is_x_avm_64 {
+			res, err := strconv.ParseFloat(val, 64)
+			if err != nil {
+				return nil, err
+			}
+			return res, nil
+		}
 		return val, nil
 	case "boolean":
 		return bool(val == "1"), nil
