@@ -88,52 +88,56 @@ jobs:
         id: buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: Build Image
-        uses: docker/build-push-action@v5
+      - name: Build Image and Export
+        uses: docker/build-push-action@v6
         with:
           build-args: REPO=${{ github.repository }}
           context: .
-          cache-from: type=gha,scope=build-${{ github.sha }}
-          cache-to: type=gha,mode=max,scope=build-${{ github.sha }}
+          cache-from: |
+            type=gha,scope=build-${{ github.ref_name }}
+            type=gha,scope=build-main
+          cache-to: type=gha,mode=max,scope=build-${{ github.ref_name }}
           file: Dockerfile
           platforms: ${{ env.BUILD_PLATFORM }}
-          push: false
+          outputs: type=oci,dest=/tmp/image.tar
+          target: runtime-image
 
-  # Build and push image to GitHub Packages.
-  # See also https://docs.docker.com/docker-hub/builds/
+      - name: Upload image artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: docker-image
+          path: /tmp/image.tar
+          retention-days: 1
+
+  # Load artifact and push to registry
   push:
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
     needs: [prepare, build]
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-
-      - name: Set up Docker Buildx
-        id: buildx
-        uses: docker/setup-buildx-action@v3
-      
-      - name: Log into registry
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-
-      - name: Build Runtime Image and Push
-        uses: docker/build-push-action@v5
+      - name: Download image artifact
+        uses: actions/download-artifact@v4
         with:
-          build-args: REPO=${{ github.repository }}
-          context: .
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
-          file: Dockerfile
-          platforms: ${{ env.BUILD_PLATFORM }}
-          push: true
-          tags: |
-            ${{ needs.prepare.outputs.DOCKER_REPOSITORY }}:${{ needs.prepare.outputs.DOCKER_TAG }}
-            ${{ needs.prepare.outputs.DOCKER_REPOSITORY }}:${{ github.sha }}
-          target: runtime-image
+          name: docker-image
+          path: /tmp
+
+      - name: Install skopeo
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y skopeo
+
+      - name: Log into registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | skopeo login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Push OCI image to registry
+        run: |
+          skopeo copy \
+            oci-archive:/tmp/image.tar \
+            docker://${{ needs.prepare.outputs.DOCKER_REPOSITORY }}:${{ needs.prepare.outputs.DOCKER_TAG }}
+          skopeo copy \
+            oci-archive:/tmp/image.tar \
+            docker://${{ needs.prepare.outputs.DOCKER_REPOSITORY }}:${{ github.sha }}
 
       - name: Inspect image
         if: success()
