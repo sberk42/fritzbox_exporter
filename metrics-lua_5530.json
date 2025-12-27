@@ -1,0 +1,194 @@
+{
+    "labelRenames": [
+        {
+            "matchRegex": "(?i)^(?:prozessor|processore)",
+            "renameLabel": "CPU"
+        },
+        {
+            "matchRegex": "(?i)^(?:system|sistema)",
+            "renameLabel": "System"
+        },
+        {
+            "matchRegex": "(?i)DSL",
+            "renameLabel": "DSL"
+        },
+        {
+            "matchRegex": "(?i)FON",
+            "renameLabel": "Phone"
+        },
+        {
+            "matchRegex": "(?i)WLAN",
+            "renameLabel": "WLAN"
+        },
+        {
+            "matchRegex": "(?i)USB",
+            "renameLabel": "USB"
+        },
+        {
+            "matchRegex": "(?i)Speicher.*FRITZ",
+            "renameLabel": "Internal eStorage"
+        }
+    ],
+    "metrics": [
+        {
+            "path": "data.lua",
+            "params": "page=energy",
+            "resultPath": "data.drain.*",
+            "resultKey": "actPerc",
+            "promDesc": {
+                "fqName": "gateway_data_energy_consumption",
+                "help": "percentage of energy consumed from data.lua?page=energy",
+                "varLabels": [
+                    "gateway", "name"
+                ]
+            },
+            "promType": "GaugeValue",
+            "cacheEntryTTL": 300
+        },
+        {
+            "path": "data.lua",
+            "params": "page=energy",
+            "resultPath": "data.drain.*.lan.*",
+            "resultKey": "class",
+            "okValue": "green",
+            "promDesc": {
+                "fqName": "gateway_data_energy_lan_status",
+                "help": "status of LAN connection from data.lua?page=energy (1 = up)",
+                "varLabels": [
+                    "gateway", "name"
+                ]
+            },
+            "promType": "GaugeValue",
+            "cacheEntryTTL": 300
+        },
+        {
+            "path": "data.lua",
+            "params": "page=ecoStat",
+            "resultPath": "data.cputemp.series.0",
+            "resultKey": "-1",
+            "promDesc": {
+                "fqName": "gateway_data_ecostat_cputemp",
+                "help": "cpu temperature from data.lua?page=ecoStat",
+                "varLabels": [
+                    "gateway"
+                ]
+            },
+            "promType": "GaugeValue",
+            "cacheEntryTTL": 300
+        },
+        {
+            "path": "data.lua",
+            "params": "page=ecoStat",
+            "resultPath": "data.cpuutil.series.0",
+            "resultKey": "-1",
+            "promDesc": {
+                "fqName": "gateway_data_ecostat_cpuutil",
+                "help": "percentage of cpu utilization from data.lua?page=ecoStat",
+                "varLabels": [
+                    "gateway"
+                ]
+            },
+            "promType": "GaugeValue",
+            "cacheEntryTTL": 300
+        },
+        {
+            "path": "data.lua",
+            "params": "page=ecoStat",
+            "resultPath": "data.ramusage.series.0",
+            "resultKey": "-1",
+            "promDesc": {
+                "fqName": "gateway_data_ecostat_ramusage",
+                "help": "percentage of RAM utilization from data.lua?page=energy",
+                "varLabels": [
+                    "gateway"
+                ],
+                "fixedLabels": {
+                    "ram_type" : "Fixed"
+                }
+            },
+            "promType": "GaugeValue",
+            "cacheEntryTTL": 300
+        },
+        {
+            "path": "data.lua",
+            "params": "page=ecoStat",
+            "resultPath": "data.ramusage.series.1",
+            "resultKey": "-1",
+            "promDesc": {
+                "fqName": "gateway_data_ecostat_ramusage",
+                "help": "percentage of RAM utilization from data.lua?page=energy",
+                "varLabels": [
+                    "gateway"
+                ],
+                "fixedLabels": {
+                    "ram_type" : "Dynamic"
+                }
+            },
+            "promType": "GaugeValue",
+            "cacheEntryTTL": 300
+        },
+        {
+            "path": "data.lua",
+            "params": "page=ecoStat",
+            "resultPath": "data.ramusage.series.2",
+            "resultKey": "-1",
+            "promDesc": {
+                "fqName": "gateway_data_ecostat_ramusage",
+                "help": "percentage of RAM utilization from data.lua?page=energy",
+                "varLabels": [
+                    "gateway"
+                ],
+                "fixedLabels": {
+                    "ram_type" : "Free"
+                }
+            },
+            "promType": "GaugeValue",
+            "cacheEntryTTL": 300
+        },
+        {
+            "path": "data.lua",
+            "params": "page=fiberFiber",
+            "resultPath": "data.sfpProperties.0",
+            "resultKey": "val",
+            "promDesc": {
+                "fqName": "gateway_fiber_sfp_temperature_celsius",
+                "help": "SFP module internal temperature in Celsius",
+                "varLabels": [
+                    "gateway"
+                ]
+            },
+            "promType": "GaugeValue",
+            "cacheEntryTTL": 60
+        },
+        {
+            "path": "data.lua",
+            "params": "page=fiberFiber",
+            "resultPath": "data.sfpProperties.3",
+            "resultKey": "val",
+            "promDesc": {
+                "fqName": "gateway_fiber_sfp_tx_power_dbm",
+                "help": "SFP module transmit power in dBm",
+                "varLabels": [
+                    "gateway"
+                ]
+            },
+            "promType": "GaugeValue",
+            "cacheEntryTTL": 60
+        },
+        {
+            "path": "data.lua",
+            "params": "page=fiberFiber",
+            "resultPath": "data.sfpProperties.4",
+            "resultKey": "val",
+            "promDesc": {
+                "fqName": "gateway_fiber_sfp_rx_power_dbm",
+                "help": "SFP module receive power in dBm",
+                "varLabels": [
+                    "gateway"
+                ]
+            },
+            "promType": "GaugeValue",
+            "cacheEntryTTL": 60
+        }
+    ]
+}
