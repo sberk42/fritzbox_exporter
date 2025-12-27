@@ -138,6 +138,12 @@ jobs:
           skopeo copy \
             oci-archive:/tmp/image.tar \
             docker://${{ needs.prepare.outputs.DOCKER_REPOSITORY }}:${{ github.sha }}
+          skopeo copy \
+            oci-archive:/tmp/image.tar \
+            docker://${{ needs.prepare.outputs.DOCKER_REPOSITORY }}/fritzbox_exporter:${{ needs.prepare.outputs.DOCKER_TAG }}
+          skopeo copy \
+            oci-archive:/tmp/image.tar \
+            docker://${{ needs.prepare.outputs.DOCKER_REPOSITORY }}/fritzbox_exporter:${{ github.sha }}
 
       - name: Inspect image
         if: success()
