@@ -132,16 +132,16 @@ jobs:
 
       - name: Push OCI image to registry
         run: |
-          skopeo copy \
+          skopeo copy --all \
             oci-archive:/tmp/image.tar \
             docker://${{ needs.prepare.outputs.DOCKER_REPOSITORY }}:${{ needs.prepare.outputs.DOCKER_TAG }}
-          skopeo copy \
+          skopeo copy --all \
             oci-archive:/tmp/image.tar \
             docker://${{ needs.prepare.outputs.DOCKER_REPOSITORY }}:${{ github.sha }}
-          skopeo copy \
+          skopeo copy --all \
             oci-archive:/tmp/image.tar \
             docker://${{ needs.prepare.outputs.DOCKER_REPOSITORY }}/fritzbox_exporter:${{ needs.prepare.outputs.DOCKER_TAG }}
-          skopeo copy \
+          skopeo copy --all \
             oci-archive:/tmp/image.tar \
             docker://${{ needs.prepare.outputs.DOCKER_REPOSITORY }}/fritzbox_exporter:${{ github.sha }}
 
