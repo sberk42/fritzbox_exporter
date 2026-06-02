@@ -1,17 +1,21 @@
 # syntax=docker/dockerfile:1
 
 # Build Image
-FROM golang:1.26.3-alpine3.23 AS builder
-RUN go install github.com/sberk42/fritzbox_exporter@latest \
-    && mkdir /app \
-    && mv /go/bin/fritzbox_exporter /app
+FROM golang:1.26.3 AS builder
 
 WORKDIR /app
 
-COPY metrics.json metrics-lua.json /app/
+# pre-copy/cache go.mod for pre-downloading dependencies and only redownloading them in subsequent builds if they change
+COPY go.mod go.sum ./
+RUN go mod download
+
+RUN mkdir -p /app/bin
+
+COPY . .
+RUN CGO_ENABLED=0 go build -ldflags '-s -w -extldflags "-static"' -o /app/bin -v 
 
 # Runtime Image
-FROM alpine:3.23 as runtime-image
+FROM gcr.io/distroless/static-debian13:nonroot
 
 ARG REPO=tback/fritzbox_exporter
 
@@ -23,16 +27,13 @@ ENV GATEWAY_URL http://fritz.box:49000
 ENV GATEWAY_LUAURL http://fritz.box
 ENV LISTEN_ADDRESS 0.0.0.0:9042
 
-RUN mkdir /app \
-    && addgroup -S -g 1000 fritzbox \
-    && adduser -S -u 1000 -G fritzbox fritzbox \
-    && chown -R fritzbox:fritzbox /app
+USER nonroot
 
-WORKDIR /app
+WORKDIR /
 
-COPY --chown=fritzbox:fritzbox --from=builder /app /app
+COPY --from=builder /app/bin/fritzbox_exporter /fritzbox_exporter
+COPY metrics.json metrics-lua.json /
 
 EXPOSE 9042
 
-ENTRYPOINT [ "sh", "-c", "/app/fritzbox_exporter" ]
-CMD [ "-username", "${USERNAME}", "-password", "${PASSWORD}", "-gateway-url", "${GATEWAY_URL}", "-gateway-luaurl", "${GATEWAY_LUAURL}", "-listen-address", "${LISTEN_ADDRESS}" ]
+ENTRYPOINT [ "/fritzbox_exporter" ]
