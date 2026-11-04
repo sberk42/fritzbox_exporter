@@ -182,6 +182,7 @@ var metrics []*Metric
 var luaMetrics []*LuaMetric
 var upnpCache map[string]*upnpCacheEntry
 var luaCache map[string]*luaCacheEntry
+var collectionMu sync.Mutex
 
 // FritzboxCollector main struct
 type FritzboxCollector struct {
@@ -409,6 +410,9 @@ func (fc *FritzboxCollector) getActionResult(metric *Metric, actionName string, 
 
 // Collect collect upnp metrics
 func (fc *FritzboxCollector) Collect(ch chan<- prometheus.Metric) {
+	collectionMu.Lock()
+	defer collectionMu.Unlock()
+
 	fc.Lock()
 	root := fc.Root
 	fc.Unlock()
