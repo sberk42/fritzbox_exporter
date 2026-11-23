@@ -40,6 +40,8 @@ const textXML = `text/xml; charset="utf-8"`
 
 var errInvalidSOAPResponse = errors.New("invalid SOAP response")
 
+var errDescriptionNotFound = errors.New("device description not found")
+
 // Root of the UPNP tree
 type Root struct {
 	BaseURL  string
@@ -167,39 +169,30 @@ type Result map[string]interface{}
 
 // load the whole tree
 func (r *Root) load() error {
-	igddesc, err := http.Get(
-		fmt.Sprintf("%s/igddesc.xml", r.BaseURL),
-	)
-
-	if err != nil {
-		return err
-	}
-
-	defer igddesc.Body.Close()
-
-	dec := xml.NewDecoder(igddesc.Body)
-
-	err = dec.Decode(r)
-	if err != nil {
-		return err
-	}
-
-	r.Services = make(map[string]*Service)
-	return r.Device.fillServices(r)
+	return r.loadDescription("igddesc.xml")
 }
 
 func (r *Root) loadTr64() error {
-	igddesc, err := http.Get(
-		fmt.Sprintf("%s/tr64desc.xml", r.BaseURL),
-	)
+	return r.loadDescription("tr64desc.xml")
+}
 
+func (r *Root) loadDescription(name string) error {
+	url := fmt.Sprintf("%s/%s", r.BaseURL, name)
+	desc, err := http.Get(url)
 	if err != nil {
 		return err
 	}
 
-	defer igddesc.Body.Close()
+	defer desc.Body.Close()
 
-	dec := xml.NewDecoder(igddesc.Body)
+	if desc.StatusCode == http.StatusNotFound {
+		return fmt.Errorf("%w: %s", errDescriptionNotFound, url)
+	}
+	if desc.StatusCode != http.StatusOK {
+		return fmt.Errorf("unexpected status %s for %s", desc.Status, url)
+	}
+
+	dec := xml.NewDecoder(desc.Body)
 
 	err = dec.Decode(r)
 	if err != nil {
@@ -524,7 +517,8 @@ func LoadServices(baseurl string, username string, password string, verifyTls bo
 	}
 
 	err := root.load()
-	if err != nil {
+	igdMissing := errors.Is(err, errDescriptionNotFound)
+	if err != nil && !igdMissing {
 		return nil, err
 	}
 
@@ -537,6 +531,11 @@ func LoadServices(baseurl string, username string, password string, verifyTls bo
 	err = rootTr64.loadTr64()
 	if err != nil {
 		return nil, err
+	}
+
+	// No IGD description for repeaters, return only TR-064
+	if igdMissing {
+		return rootTr64, nil
 	}
 
 	for k, v := range rootTr64.Services {
