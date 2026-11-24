@@ -1,0 +1,6 @@
+.git
+.github
+*.md
+grafana
+systemd
+all_available_metrics_*.json
